@@ -1,0 +1,59 @@
+[
+    { "id": 1,
+        "name": "FITnFLEX",
+        "description": "A wellness app to track fitness, meditation, and dietary habits with real-time feedback.",
+        "video_link": "/videos/NewsFlash.mp4",
+        "technologies": ["Angular", "TypeScript", "OpenCV", "Flask", "Twilio API", "Google OAuth"],
+        "links": {
+            "github": "https://github.com/visnunathan8/FITnFLEX",
+            "website": "https://visnunathan8.github.io/FITnFLEX/"
+        }
+    },
+    { "id": 2,
+        "name": "SignLingo",
+        "description": "An interactive sign language learning app with sign language detection, quizzes and progress tracking.",
+        "video_link": "/videos/NewsFlash.mp4",
+        "technologies": ["JavaScript", "Flask", "SQLite", "TensorFlow", "Scikit-learn", "Docker"],
+        "links": {
+            "github": "https://github.com/abrarfuad27/SignLingo"
+        }
+    },
+    { "id": 3,
+        "name": "Chelf",
+        "description": "A food inventory management app recommending recipes based on available ingredients.",
+        "video_link": "/videos/NewsFlash.mp4",
+        "technologies": ["Python", "React", "Flask", "PostgreSQL", "Cohere API", "Figma"],
+        "links": {
+            "github": "https://github.com/smrahman1/Chelf"
+        }
+    },
+    { "id": 4,
+        "name": "Silo Formation of Political Thought in TikTok",
+        "description": "Authored a research paper on the analysis of TikTok's personalisation algorithm and the formation of silos of political content on the platform",
+        "video_link": "/videos/NewsFlash.mp4",
+        "technologies": ["Python", "NumPy", "Selenium"],
+        "links": {
+            "github": "https://github.com/ArpanSaha07/Siloing-of-Political-Thought-in-TikTok",
+            "website": "https://github.com/ArpanSaha07/Siloing-of-Political-Thought-in-TikTok/blob/main/Arpan_Saha_COMP400.pdf"
+        }
+    },
+    { "id": 5,
+        "name": "MoodMusic",
+        "description": "A chatbot that detects mood and recommends personalized songs based on user's mood and preferences.",
+        "video_link": "/videos/NewsFlash.mp4",
+        "technologies": ["JavaScript", "NodeJS", "Scikit-learn", "NLTK", "Pandas", "Spotify API"],
+        "links": {
+            "github": "https://github.com/ArpanSaha07/MoodMusic"
+        }
+    },
+    { "id": 6,
+        "name": "NewsFlash BlogSite",
+        "description": "An user-friendly and responsive blogsite.",
+        "video_link": "/videos/NewsFlash.mp4",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "links": {
+            "github": "https://github.com/ArpanSaha07/NewsFlash_blogSite",
+            "website": "https://arpansaha07.github.io/NewsFlash_blogSite/"
+        }
+    }
+]

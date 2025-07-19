@@ -1,0 +1,20 @@
+[
+    {
+        "row_num": 1,
+        "technologies": [
+            "html", "css", "js", "ts", "react", "nextjs", "flask", "tailwindcss", "figma", "canva"
+        ]
+    },
+    {
+        "row_num": 2,
+        "technologies": [
+            "python", "java", "c", "r", "bash", "docker", "aws", "postgresql", "mongodb", "mysql", "git", "linux"
+        ]
+    },
+    {
+        "row_num": 3,
+        "technologies": [
+            "numpy", "pandas", "scikitlearn", "tensorflow", "keras", "pytorch", "opencv", "selenium", "matplotlib", "junit"
+        ]
+    }
+]

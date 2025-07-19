@@ -1,0 +1,25 @@
+ [
+    {
+        "title": "ML Engineer",
+        "company": "McGill University",
+        "date": "Dec 2022 - April 2023",
+        "description": ["• Developed convolutional neural network model to segment medical images in soft-tissue sarcoma research.", 
+        "• Collaborated with Dr. James Tsui to develop and evaluate ML models, presenting data-driven insights to optimize radiotherapy planning for cancer treatment."]
+    },
+    {
+        "title": "Web Developer",
+        "company": "McGill University",
+        "date": "May 2022 - May 2025",
+        "description": ["• Revamped over 2,000 webpages using Drupal CMS, significantly improving accessibility and user experience.",
+        "• Led a major site revamp, increasing user engagement by 350% (from 15k to 65k monthly users) through improved content architecture and on-page SEO strategies.",
+        "• Created dynamic Google Looker Studio dashboards leveraging Google Analytics and Search Console to track SEO KPIs, user behavior, and performance trends.",
+        "• Automated repetitive processes using Python scripts, enhancing efficiency and reducing manual workload.",
+        "• Collaborated with multiple departments to deliver technical support, conduct training sessions, and generate regular reports on web analytics and improvement opportunities."]
+    },
+    {
+        "title": "Founder",
+        "company": "ElevateTech",
+        "date": "2025 - Present",
+        "description": ["• Provide website development and AI integration services."]
+    }
+]
