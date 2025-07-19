@@ -51,7 +51,6 @@ export default function ContactSection() {
           {/* Dropdown */}
           <select
             name="subject"
-            aria-placeholder='What are you looking for?'
             className="border-b border-gray-400 py-2 outline-none text-gray-400"
             required
             defaultValue=""
