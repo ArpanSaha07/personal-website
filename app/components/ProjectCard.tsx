@@ -7,6 +7,8 @@ import { CiGlobe } from "react-icons/ci";
 
 export default function ProjectCard({ project }: ProjectCardProps) {
 
+
+    /* this code is for video play functionality on card hover
     const videoRef = useRef<HTMLVideoElement>(null);
 
     const handleMouseEnter = () => {
@@ -20,6 +22,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             videoRef.current.pause();
         }
     };
+    */
 
     const pillClasses = [
         "bg-orange-100 text-orange-400 border-orange-400",
@@ -30,13 +33,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     return (
         <div
             className="bg-grey-800 rounded-xl p-2 shadow-[4px_4px_24px_4px_rgba(0,0,0,0.10),12px_4px_32px_8px_rgba(0,0,0,0.18)] transition-shadow duration-300 hover:shadow-[8px_8px_32px_8px_rgba(80,0,200,0.18),24px_8px_48px_16px_rgba(80,0,200,0.28)] hover:shadow-purple-400/40 relative max-w-md mx-auto flex flex-col gap-3"
-            style={{ boxShadow: '4px 4px 24px 4px rgba(12, 33, 226, 0.1), 12px 4px 32px 8px rgba(20, 53, 220, 0.18)' }} data-cursor="project" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+            style={{ boxShadow: '4px 4px 24px 4px rgba(12, 33, 226, 0.1), 12px 4px 32px 8px rgba(20, 53, 220, 0.18)' }} data-cursor="project"
         >
             {/* Video/Image Preview */}
             {project.video_link ? (
                 <div className="rounded-lg overflow-hidden aspect-video bg-black">
                     <video
-                        ref={videoRef}
+                        autoPlay
                         className="w-full h-full object-cover hover:play"
                         src={project.video_link}
                         loop

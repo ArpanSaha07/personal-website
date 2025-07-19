@@ -16,7 +16,7 @@ export default function ProjectSection() {
             <p className="text-lg text-gray-600 pt-4 pb-15 text-center">Check out some of my personal projects</p>
 
           <ParallaxProvider>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-3" aria-label="Projects Gallery">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-5" aria-label="Projects Gallery">
               {projects.map((project: Project, idx: number) => {
                 // Only apply parallax and translateY on medium screens and up
                 const speed = idx % 2 === 0 ? 3 : -3;

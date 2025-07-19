@@ -21,7 +21,7 @@ export default function Footer() {
           {[
             {
               icon: <FaInstagram />,
-              href: "https://www.instagram.com/_arpan007/",
+              href: "https://www.instagram.com/_arpan002/",
               label: "Instagram",
             },
             {
