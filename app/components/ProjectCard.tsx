@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import Link from "next/link"
 import Pill from "./Pill"
 import { ProjectCardProps } from "@/app/types"
@@ -71,7 +70,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     )}
                     {project.links?.website && (
                         <Link href={project.links.website} target="_blank" rel="noopener noreferrer">
-                            <button className="flex items-center gap-1 bg-gray-100 text-gray-700 over:bg-gray-200 rounded-full px-3 py-1 text-sm font-medium shadow border border-gray-300 transition">
+                            <button className="flex items-center gap-1 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded-full px-3 py-1 text-sm font-medium shadow border border-gray-300 transition">
                                 <CiGlobe className="text-gray-700"/>
                                 Website
                             </button>

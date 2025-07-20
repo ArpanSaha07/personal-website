@@ -7,7 +7,7 @@ export default function ContactSection() {
       <div className="flex flex-col lg:flex-row justify-between items-start gap-12 max-w-[2000px] mx-auto">
         {/* LEFT SECTION */}
         <div className="md:w-1/2 flex flex-col">
-          <h2 className="section-heading mb-3">Contact Me</h2>
+          <h2 className="section-heading mt-5 mb-3">Contact Me</h2>
           <p className="text-gray-600 text-lg max-w-md">
             Open to all project inquiries, ideas, and creative conversations.
           </p>
@@ -27,7 +27,7 @@ export default function ContactSection() {
 
         {/* RIGHT SECTION - FORM */}
         <form
-          className="lg:w-1/2 w-full max-w-xl rounded-2xl border-gray-400 p-6 md:p-8 flex flex-col gap-4 text-gray-700 text-lg"
+          className="lg:w-1/2 w-full max-w-xl rounded-2xl border border-gray-400 p-6 md:p-8 flex flex-col gap-4 text-gray-700 text-lg"
           action="https://formsubmit.co/sahaarpan550@gmail.com" method="POST"
         >
           {/* Name & Email */}

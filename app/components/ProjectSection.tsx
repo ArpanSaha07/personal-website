@@ -12,7 +12,7 @@ export default function ProjectSection() {
         <div className="w-full bg-white pb-10">
         <div id="projects" className="max-w-6xl mx-auto ">
   
-            <h2 className="section-heading text-center pt-15">My Projects</h2>
+            <h2 className="section-heading text-center pt-20">My Projects</h2>
             <p className="text-lg text-gray-600 pt-4 pb-15 text-center">Check out some of my personal projects</p>
 
           <ParallaxProvider>

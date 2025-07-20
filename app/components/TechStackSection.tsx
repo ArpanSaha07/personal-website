@@ -3,7 +3,7 @@ import { TechStack } from "../types";
 
 const TechStackSection = () => {
   return (
-    <section className="w-full bg-white py-20 overflow-hidden">
+    <section className="w-full bg-white pt-30 pb-15 overflow-hidden">
 
       <h2 className="section-heading text-center pb-4">Tech Stack</h2>
       <p className="text-lg text-gray-600 text-center mb-8">

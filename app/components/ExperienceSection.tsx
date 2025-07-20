@@ -28,7 +28,7 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience" className="py-10 px-4 md:px-40 bg-white flex flex-col items-center">
-      <h2 className="section-heading">Experience</h2>
+      <h2 className="section-heading pt-10">Experience</h2>
       <div className="relative max-w-7xl mx-auto">
         {/* Vertical line */}
         <div
