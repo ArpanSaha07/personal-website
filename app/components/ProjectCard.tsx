@@ -59,7 +59,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <p className="text-gray-700 text-base mb-2">{project.description}</p>
 
                 {/* Links */}
-                <div className="flex gap-3 mb-2">
+                <div className="flex gap-3">
                     {project.links?.github && (
                         <Link href={project.links.github} target="_blank" rel="noopener noreferrer">
                             <button className="flex items-center gap-1 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded-full px-3 py-1 text-sm font-medium shadow border border-gray-300 transition">

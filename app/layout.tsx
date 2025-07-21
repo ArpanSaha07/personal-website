@@ -33,7 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/coloured-icons@master/src/app/ci.min.css" />
       </head>
 
-      <body className={`${rethinkSans.variable} ${lato.variable} antialiased`}>
+      <body className={`${rethinkSans.variable} ${lato.variable} antialiased min-h-screen flex flex-col`}> {/* Using flexbox to ensure the footer stays at the bottom */}
         <Navbar />
         {children}
         <Footer />

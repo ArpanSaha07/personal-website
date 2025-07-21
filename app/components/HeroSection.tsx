@@ -51,7 +51,7 @@ export default function HeroSection() {
               <Link href="https://www.linkedin.com/in/arpan-saha7/" target="_blank" className="hover:text-5xl duration-300"><FaLinkedin /></Link>
               <Link href="mailto:sahaarpan550@gmail.com" target="_blank" rel="noreferrer" className="hover:text-5xl duration-300"><MdOutlineAlternateEmail /></Link> 
               <button className="relative overflow-hidden bg-transparent px-5 py-3 border-white border-3 h-9.5 rounded-full hover:text-black transition duration-300 flex items-center group">
-                <Link href="https://www.linkedin.com/in/arpan-saha7/overlay/1749879267659/single-media-viewer/?profileId=ACoAADbWZj4BrlALbdbKWYa4VMfyBX_4Kh9VO6Y" target="_blank" className="text-[20px] relative z-10">Resume</Link>
+                <Link href="/pdf/Arpan_Resume.pdf" className="text-[20px] relative z-10">Resume</Link>
                 <span className="absolute bottom-0 left-1/2 w-0 h-0 bg-white rounded-full 
                             transition-all duration-500 ease-out 
                             group-hover:w-[400px] group-hover:h-[400px] 

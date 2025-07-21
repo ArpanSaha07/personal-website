@@ -8,7 +8,7 @@ import CustomCursor from "./components/CustomCursor";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex-grow">
         <CustomCursor />
 
         <HeroSection />
