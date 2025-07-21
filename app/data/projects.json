@@ -2,7 +2,7 @@
     { "id": 1,
         "name": "FITnFLEX",
         "description": "A wellness app to track fitness, meditation, and dietary habits with real-time feedback.",
-        "video_link": "/videos/NewsFlash.mp4",
+        "video_link": "/videos/FITnFLEX.mp4",
         "technologies": ["Angular", "TypeScript", "OpenCV", "Flask", "Twilio API", "Google OAuth"],
         "links": {
             "github": "https://github.com/visnunathan8/FITnFLEX",
@@ -12,7 +12,7 @@
     { "id": 2,
         "name": "SignLingo",
         "description": "An interactive sign language learning app with sign language detection, quizzes and progress tracking.",
-        "video_link": "/videos/NewsFlash.mp4",
+        "video_link": "/videos/SignLingo.mp4",
         "technologies": ["JavaScript", "Flask", "SQLite", "TensorFlow", "Scikit-learn", "Docker"],
         "links": {
             "github": "https://github.com/abrarfuad27/SignLingo"
@@ -21,7 +21,7 @@
     { "id": 3,
         "name": "Chelf",
         "description": "A food inventory management app recommending recipes based on available ingredients.",
-        "video_link": "/videos/NewsFlash.mp4",
+        "video_link": "/videos/Chelf.mp4",
         "technologies": ["Python", "React", "Flask", "PostgreSQL", "Cohere API", "Figma"],
         "links": {
             "github": "https://github.com/smrahman1/Chelf"
@@ -30,7 +30,7 @@
     { "id": 4,
         "name": "Silo Formation of Political Thought in TikTok",
         "description": "Authored a research paper on the analysis of TikTok's personalisation algorithm and the formation of silos of political content on the platform",
-        "video_link": "/videos/NewsFlash.mp4",
+        "video_link": "/videos/Silo.mp4",
         "technologies": ["Python", "NumPy", "Selenium"],
         "links": {
             "github": "https://github.com/ArpanSaha07/Siloing-of-Political-Thought-in-TikTok",
@@ -40,7 +40,7 @@
     { "id": 5,
         "name": "MoodMusic",
         "description": "A chatbot that detects mood and recommends personalized songs based on user's mood and preferences.",
-        "video_link": "/videos/NewsFlash.mp4",
+        "video_link": "/videos/mood-music.mp4",
         "technologies": ["JavaScript", "NodeJS", "Scikit-learn", "NLTK", "Pandas", "Spotify API"],
         "links": {
             "github": "https://github.com/ArpanSaha07/MoodMusic"

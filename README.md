@@ -1,7 +1,6 @@
 # This is Arpan Saha's personal website.
 
 ## TODO:
-
 - Add hover scroll animation on Navbar text
 - Make the project cards same size
 

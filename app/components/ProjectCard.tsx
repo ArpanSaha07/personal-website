@@ -46,6 +46,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     />
                 </div>
             ) : (
+                /* Remove or update this section */ 
                 <div className="rounded-t-lg overflow-hidden aspect-video bg-gradient-to-r from-purple-400 to-pink-400 flex items-center justify-center">
                     <span className="text-3xl text-white font-bold opacity-80">{project.name[0] || '?'}</span>
                 </div>
