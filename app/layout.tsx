@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from "next";
 import { Rethink_Sans, Lato } from "next/font/google";
 import { RootLayoutProps } from "./types";
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
