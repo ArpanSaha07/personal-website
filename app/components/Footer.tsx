@@ -36,7 +36,7 @@ export default function Footer() {
             },
             {
               icon: <MdMail />,
-              href: "mailto:saharpan550@gmail.com",
+              href: "mailto:sahaarpan550@gmail.com",
               label: "Email",
             },
           ].map(({ icon, href, label }, idx) => (

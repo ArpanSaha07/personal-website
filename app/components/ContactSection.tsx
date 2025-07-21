@@ -12,7 +12,7 @@ export default function ContactSection() {
             Open to all project inquiries, ideas, and creative conversations.
           </p>
           
-          <button className="mt-6 relative overflow-hidden rounded-full text-black text-[18px] font-semibold border-black border-1 px-6 py-2 w-fit hover:text-white transition-all duration-300 flex items-center gap-2 group">
+          <button className="mt-6 relative overflow-hidden rounded-full text-black text-[18px] font-semibold border-black border-1 px-6 py-2 w-fit hover:text-white transition-all duration-300 flex items-center group">
             <Link href="mailto:sahaarpan550@gmail.com">
               <span className="relative z-10">SCHEDULE A CALL</span>
               <span className="relative z-10"> ↗</span>
