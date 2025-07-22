@@ -15,5 +15,5 @@
 - Project hover cursor
 
 ## Optional:
-- Create a button component
+- Refactor button component so that it can be used in all button instances in the project
 - Add change in shadow effect of ProjectCards on hover

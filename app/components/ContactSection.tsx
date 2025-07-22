@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Button from './Button';
 
 export default function ContactSection() {
   return (
@@ -12,17 +12,12 @@ export default function ContactSection() {
             Open to all project inquiries, ideas, and creative conversations.
           </p>
           
-          <button className="mt-6 relative overflow-hidden rounded-full text-black text-[18px] font-semibold border-black border-1 px-6 py-2 w-fit hover:text-white transition-all duration-300 flex items-center group">
-            <Link href="mailto:sahaarpan550@gmail.com">
-              <span className="relative z-10">SCHEDULE A CALL</span>
-              <span className="relative z-10"> ↗</span>
-              <span className="absolute bottom-0 left-1/2 w-0 h-0 bg-black rounded-full 
-                              transition-all duration-500 ease-out 
-                              group-hover:w-[600px] group-hover:h-[600px] 
-                              transform -translate-x-1/2 translate-y-1/2 origin-bottom"
-              />
-            </Link>
-          </button>
+          <Button href="mailto:sahaarpan550@gmail.com"
+            type='button' 
+            className1="mt-6 text-black text-[18px] font-semibold border-black border-1 px-6 py-2 w-fit hover:text-white" 
+            className2="bg-black">
+              SCHEDULE A CALL ↗
+          </Button>
         </div>
 
         {/* RIGHT SECTION - FORM */}

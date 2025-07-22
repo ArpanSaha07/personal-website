@@ -27,7 +27,7 @@ export type TechStack = {
 
 // Page Types
 export type RootLayoutProps = Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>
 
 // Components Types
@@ -38,4 +38,12 @@ export type ProjectCardProps = {
 export type PillProps = {
     children: ReactNode
     className?: string
+}
+
+export type ButtonProps = {
+    children: ReactNode
+    href: string
+    type: "button" | "reset" | "submit"
+    className1: string
+    className2: string
 }

@@ -13,8 +13,8 @@ export default function AnimatedText({ href, label, onClick }: AnimatedTextProps
     <Link
       href={href}
       onClick={onClick}
-      className="group relative inline-block h-[1.5em] overflow-hidden leading-none"
-    >
+      className={`group relative inline-block h-[1.5em] overflow-hidden leading-none aria-label=${label}`}
+      >
       <span className="absolute inset-0 transition-transform duration-300 group-hover:-translate-y-full">
         {label}
       </span>
