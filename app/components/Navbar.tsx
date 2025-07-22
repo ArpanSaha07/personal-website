@@ -28,9 +28,9 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-6 text-base">
-            <li><Link href="#projects" className="hover:underline">Projects</Link></li>
-            <li><Link href="#experience" className="hover:underline">Experience</Link></li>
-            <li><Link href="#contact" className="hover:underline">Contact</Link></li>
+            <li><Link href="#projects" className="hover:underline" aria-label='Projects Section'>Projects</Link></li>
+            <li><Link href="#experience" className="hover:underline" aria-label='Experience Section'>Experience</Link></li>
+            <li><Link href="#contact" className="hover:underline" aria-label='Contact Section'>Contact</Link></li>
           </ul>
 
           {/* Burger Menu Button (Mobile) */}
