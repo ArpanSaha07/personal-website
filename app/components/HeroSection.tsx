@@ -9,13 +9,13 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 export default function HeroSection() {
   return (
     <section id="hero-section" className="relative w-full h-screen overflow-hidden">
-      <div className="fixed top-0 right-0 h-full w-[80%] z-[-10] transform translateZ(-1px) scale(2.2)">
+      <div className="fixed top-0 right-0 h-full w-[80%] z-[-10]">
         <Image
             src="/images/my-hero-image.jpeg"
-            alt="hero-background-image"
+            alt=""
             fill
             quality={100}
-            priority
+            priority={true}
             className="object-cover object-[top_center]"
         />
       </div>
@@ -47,10 +47,10 @@ export default function HeroSection() {
 
           <span>
             <div className="flex gap-4 text-4xl mt-5 h-10">
-              <Link href="https://www.github.com/ArpanSaha07" target="_blank" rel="noopener noreferrer" className="hover:text-5xl duration-300"><FaGithub /></Link>
-              <Link href="https://www.linkedin.com/in/arpan-saha7/" target="_blank" className="hover:text-5xl duration-300"><FaLinkedin /></Link>
-              <Link href="mailto:sahaarpan550@gmail.com" target="_blank" rel="noreferrer" className="hover:text-5xl duration-300"><MdOutlineAlternateEmail /></Link>
-              
+              <Link href="https://www.github.com/ArpanSaha07" target="_blank" rel="noopener noreferrer" className="hover:text-5xl duration-300" aria-label="Link to my GitHub profile"><FaGithub /></Link>
+              <Link href="https://www.linkedin.com/in/arpan-saha7/" target="_blank" className="hover:text-5xl duration-300" aria-label="Link to my LinkedIn profile"><FaLinkedin /></Link>
+              <Link href="mailto:sahaarpan550@gmail.com" target="_blank" rel="noreferrer" className="hover:text-5xl duration-300" aria-label="Link to my email address"><MdOutlineAlternateEmail /></Link>
+
               <button className="text-[20px] relative overflow-hidden bg-transparent px-5 py-3 border-white border-3 h-9.5 rounded-full hover:text-black transition duration-300 flex items-center group">
                 {/* anchor tag instead of Link tag to avoid prefetching */}   
                 <a href="/pdf/Arpan_Resume.pdf" className="relative z-10">Resume</a>

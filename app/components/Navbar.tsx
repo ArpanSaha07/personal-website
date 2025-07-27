@@ -23,6 +23,7 @@ export default function Navbar() {
               width={45}
               height={45}
               className="rounded-full"
+              priority={true}
             />
           </Link>
 

@@ -31,7 +31,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head> 
         <meta name="keywords" content="Arpan Saha, portfolio, web developer, Machine learning Engineer, ElevateTech" />
         <meta name="author" content="Arpan Saha" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/coloured-icons@master/src/app/ci.min.css" />
       </head>
 
       <body className={`${rethinkSans.variable} ${lato.variable} antialiased min-h-screen flex flex-col`}> {/* Using flexbox to ensure the footer stays at the bottom */}

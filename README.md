@@ -1,10 +1,13 @@
 # This is Arpan Saha's personal website.
 
 ## TODO:
+- Fix layer shift of TechStack section
 - Add hover scroll animation on Navbar text
 - Make all project cards the same size
 - Fix ProjectCard shadow effect
-- Make the videos into gifs
+- Make the videos into gifs to reduce file size
+- Resolve browser errors
+- Improve the website by taking suggestions from https://pagespeed.web.dev/ and https://www.webpagetest.org/
 
 
 ## Issues to fix:

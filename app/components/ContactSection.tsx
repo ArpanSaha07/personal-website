@@ -49,6 +49,7 @@ export default function ContactSection() {
             className="border-b border-gray-400 py-2 outline-none text-gray-400"
             required
             defaultValue=""
+            aria-label='Select subject'
           >
             <option value="" disabled>What are you looking for?</option>
             <option value="freelance">Freelance Collaboration</option>
