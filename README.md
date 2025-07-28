@@ -9,7 +9,6 @@
 - Resolve browser errors
 - Improve the website by taking suggestions from https://pagespeed.web.dev/ and https://www.webpagetest.org/
 
-
 ## Issues to fix:
 - Remove the hero image from the background of the webpage
 - Hero image changes size when scrolling down on mobile devices- could be because of h-screen

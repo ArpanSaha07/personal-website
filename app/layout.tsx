@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next";
 import { Rethink_Sans, Lato } from "next/font/google";
 import { RootLayoutProps } from "./types";
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head> 
-        <meta name="keywords" content="Arpan Saha, portfolio, web developer, Machine learning Engineer, ElevateTech" />
+        <meta name="keywords" content="Arpan Saha, Arpan, arpan, arpan saha, portfolio, web developer, Machine learning Engineer, ElevateTech, elevatetech" />
         <meta name="author" content="Arpan Saha" />
       </head>
 
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {children}
         <Footer />
         <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );
