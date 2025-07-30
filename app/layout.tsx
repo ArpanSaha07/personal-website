@@ -22,7 +22,7 @@ const lato = Lato({
 export const metadata: Metadata = {
   metadataBase: new URL("https://arpan-saha.com"),
   title: "Arpan Saha | Fullstack Developer",
-  description: "Arpan Saha's personal portfolio website."
+  description: "Arpan Saha&#39;s personal portfolio website."
 };
 
 
@@ -38,8 +38,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Navbar />
         {children}
         <Footer />
-        <Analytics />
-        <SpeedInsights/>
+        <Analytics /> {/* Vercel Analytics for tracking user interactions */}
+        <SpeedInsights/> {/* Vercel Speed Insights for performance monitoring */}
       </body>
     </html>
   );
