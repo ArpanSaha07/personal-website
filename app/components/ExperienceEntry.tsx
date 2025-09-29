@@ -38,7 +38,7 @@ export default function ExperienceEntry({ exp, index, scrollPercent, total } : {
         </p>
         <div className="text-gray-700 text-[18px]">
           {exp.description.map((desc, descIndex) => (
-            <p key={descIndex} className="mb-2">
+            <p key={descIndex} className="mb-1">
               {desc}
             </p>
           ))}

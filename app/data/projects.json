@@ -38,12 +38,12 @@
         }
     },
     { "id": 5,
-        "name": "MoodMusic",
-        "description": "A chatbot that detects mood and recommends personalized songs based on user's mood and preferences.",
-        "video_link": "/videos/mood-music.mp4",
-        "technologies": ["JavaScript", "NodeJS", "Scikit-learn", "NLTK", "Pandas", "Spotify API"],
+        "name": "CampusVibe",
+        "description": "A campus-centric events platform for students to discover, create, and share events.",
+        "video_link": "/videos/campus-vibe.mp4",
+        "technologies": ["NextJs", "TypeScript", "TailwindCSS", "Spring Boot", "PostgreSQL", "Docker", "GitHub Actions", "AWS"],
         "links": {
-            "github": "https://github.com/ArpanSaha07/MoodMusic"
+            "github": "https://github.com/ArpanSaha07/campus-vibe"
         }
     },
     { "id": 6,

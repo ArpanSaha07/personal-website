@@ -40,7 +40,7 @@ export default function ExperienceSection() {
           }}
         />
         {/* Experience entries */}
-        <div className="space-y-10">
+        <div className="space-y-5">
           {experiences.map((exp, index) => (
             <ExperienceEntry
               key={index}

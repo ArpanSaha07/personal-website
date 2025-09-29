@@ -10,7 +10,7 @@ const TechStackSection = () => {
   useEffect(() => {
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "https://cdn.jsdelivr.net/gh/dheereshagrwal/coloured-icons@master/src/app/ci.min.css";
+    link.href="https://cdn.jsdelivr.net/gh/dheereshag/coloured-icons@master/app/ci.min.css"
     link.id = "ci-icons-stylesheet";
     document.head.appendChild(link);
 
