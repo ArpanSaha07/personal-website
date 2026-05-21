@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             className="
                 bg-grey-800 rounded-xl p-2 shadow-[4px_4px_24px_4px_rgba(0,0,0,0.10),12px_4px_32px_8px_rgba(0,0,0,0.18)] transition-shadow duration-300 
                 hover:shadow-[8px_8px_32px_8px_rgba(80,0,200,0.18),24px_8px_48px_16px_rgba(80,0,200,0.28)] hover:shadow-purple-400/40 
-                relative max-w-md min-h-44 mx-auto flex flex-col gap-3
+                relative max-w-md mx-auto flex flex-col gap-3
                 "
             style={{ boxShadow: '4px 4px 24px 4px rgba(12, 33, 226, 0.1), 12px 4px 32px 8px rgba(20, 53, 220, 0.18)' }} data-cursor="project"
         >
