@@ -14,7 +14,6 @@ export default function HeroSection() {
             src="/images/my-hero-image.jpeg"
             alt=""
             fill
-            quality={100}
             priority={true}
             className="object-cover object-[top_center]"
         />
