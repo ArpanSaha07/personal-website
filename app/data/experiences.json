@@ -1,11 +1,11 @@
  [
     { 
-        "title": "Safety Ambassador",
-        "company": "McGill University",
-        "date": "Jan 2022 - Apr 2022",
+        "title": "Production Tech Support",
+        "company": "Alorica",
+        "date": "Oct 2025 - Present",
         "description": [
-            "• Promoted COVID-19 safety protocols on campus, ensuring compliance with health guidelines.",
-            "• Provided frontline support to staff and visitors, acting as a key point of contact for inquiries and problem."
+            "• Provided production support for critical applications by troubleshooting incidents, analyzing logs, and resolving issues using SQL, Bash, Python, and Linux commands, maintaining 99%+ system uptime.",
+            "• Monitored and triaged tickets via ServiceNow, performed root cause analysis, and implemented fixes and automation scripts, reducing recurring incidents by 30% and improving operational efficiency."
         ]
     },
     {
@@ -14,11 +14,10 @@
         "date": "May 2022 - May 2025",
         "description": [
             "• Revamped 2,000+ webpages in Drupal CMS, applying WCAG guidelines and responsive design best practices, significantly improving accessibility and user experience.",
-            "• Led a major site revamp, boosting engagement by 350% (15k to 65k monthly users) through improved content architecture, navigation and SEO.",
-            "• Built real-time dashboards in Google Analytics to monitor SEO, optimizing for Google PageSpeed scores.",
-            "• Developed a custom tool to detect accessibility errors and suggest improvements directly on webpages.",
-            "• Automated routine tasks using Python scripts, enhancing efficiency and reducing manual workload.",
-            "• Led cross-departmental projects delivering web solutions that improved branding and communication."
+            "• Led end-to-end website redesign, increasing user engagement by 350% (15K → 65K monthly users) through improved UI/UX, information architecture, navigation, and SEO optimization.",
+            "• Built and maintained real-time analytics dashboards in Google Analytics to track SEO performance and optimize Google PageSpeed scores.",
+            "• Developed a Selenium-based automation tool to detect accessibility issues and provide actionable recommendations directly on webpages.",
+            "• Designed UI and visual assets using Canva and collaborated with cross-functional teams, presenting solutions and delivering scalable web experiences that strengthened branding and improved content clarity."
         ]
     },
     {

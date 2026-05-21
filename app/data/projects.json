@@ -40,10 +40,11 @@
     { "id": 5,
         "name": "CampusVibe",
         "description": "A campus-centric events platform for students to discover, create, and share events.",
-        "video_link": "/videos/campus-vibe.mp4",
+        "video_link": "/videos/campusvibe-video.mp4",
         "technologies": ["NextJs", "TypeScript", "TailwindCSS", "Spring Boot", "PostgreSQL", "Docker", "GitHub Actions", "AWS"],
         "links": {
-            "github": "https://github.com/ArpanSaha07/campus-vibe"
+            "github": "https://github.com/ArpanSaha07/campus-vibe",
+            "website": "https://campus-vibe-seven.vercel.app/"
         }
     },
     { "id": 6,
