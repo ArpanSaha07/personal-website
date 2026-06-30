@@ -35,7 +35,7 @@ export default function ExperienceSection() {
           ref={lineRef}
           className="absolute top-7 left-0 w-1 rounded bg-gradient-to-b from-gray-300 to-black transition-all duration-500"
           style={{
-            height: `${85}%`,
+            height: `${83}%`,
             background: `linear-gradient(to bottom, #000 ${scrollPercent * 50}%, #ccc ${scrollPercent * 100}%)`,
           }}
         />

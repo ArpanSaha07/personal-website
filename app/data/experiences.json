@@ -1,11 +1,20 @@
  [
     { 
+        "title": "Web Developer and SEO Specialist",
+        "company": "ATS Containers",
+        "date": "May 2026 - Present",
+        "description": [
+            "• Developed and optimized responsive, high-performance web experiences across desktop, tablet, and mobile devices, reducing page load times by 40% and improving Core Web Vitals scores by 35%. .",
+            "• Led technical SEO and AI search optimization initiatives, increasing organic traffic by 30% and generating 15% more qualified leads through improved visibility in search engines and AI-generated search results."
+        ]
+    },
+    { 
         "title": "Production Tech Support",
         "company": "Alorica",
-        "date": "Oct 2025 - Present",
+        "date": "Oct 2025 - May 2026",
         "description": [
-            "• Provided production support for critical applications by troubleshooting incidents, analyzing logs, and resolving issues using SQL, Bash, Python, and Linux commands, maintaining 99%+ system uptime.",
-            "• Monitored and triaged tickets via ServiceNow, performed root cause analysis, and implemented fixes and automation scripts, reducing recurring incidents by 30% and improving operational efficiency."
+            "• Developed, enhanced, and maintained Java-based enterprise applications, implementing new features, troubleshooting issues, and optimizing application performance using Java, SQL, and Linux while supporting business-critical systems with 99%+ uptime. ",
+            "• Managed application deployments and production releases, leveraging Bash and Python scripting to automate operational tasks and ensure reliable server updates, reducing recurring issues by 30%."
         ]
     },
     {
@@ -27,14 +36,6 @@
         "description": [
             "• Developed convolutional neural network model to segment medical images in soft-tissue sarcoma research.", 
             "• Collaborated with Dr. James Tsui to develop and evaluate ML models, presenting data-driven insights to optimize radiotherapy planning for cancer treatment."
-        ]
-    },
-    {
-        "title": "Founder",
-        "company": "ElevateTech",
-        "date": "2025 - Present",
-        "description": [
-            "• Provide software development and AI integration services."
         ]
     }
 ]
