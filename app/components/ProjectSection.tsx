@@ -1,12 +1,28 @@
 'use client';
+import { useSyncExternalStore } from "react";
 import type { Project } from "@/app/types";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { Parallax } from "react-scroll-parallax";
 import ProjectCard from "@/app/components/ProjectCard";
 import projects from "@/app/data/projects.json";
 
+const SMALL_SCREEN_QUERY = "(max-width: 639px)";
+
+// Server snapshot is false so the first client render matches the server HTML; the real value applies right after hydration
+function useIsSmallScreen() {
+    return useSyncExternalStore(
+        (onChange) => {
+            const mql = window.matchMedia(SMALL_SCREEN_QUERY);
+            mql.addEventListener("change", onChange);
+            return () => mql.removeEventListener("change", onChange);
+        },
+        () => window.matchMedia(SMALL_SCREEN_QUERY).matches,
+        () => false
+    );
+}
 
 export default function ProjectSection() {
+    const isSmallScreen = useIsSmallScreen();
 
     return (
         <div className="w-full bg-white pb-10">
@@ -23,7 +39,7 @@ export default function ProjectSection() {
                   const isMiddleCard = idx % 3 === 1;
 
                   // On small screens, no parallax or translate
-                  if (typeof window !== "undefined" && window.innerWidth < 640) {
+                  if (isSmallScreen) {
                     return (
                       <div key={project.id} className="h-full">
                         <ProjectCard project={project} />

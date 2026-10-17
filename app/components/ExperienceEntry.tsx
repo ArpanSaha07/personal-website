@@ -1,11 +1,14 @@
-import { motion, useAnimation, useInView } from 'framer-motion';
+import { motion, useAnimation, useInView, useTransform, type MotionValue } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { Experience } from '@/app/types';
 
-export default function ExperienceEntry({ exp, index, scrollPercent, total } : {exp: Experience, index: number, scrollPercent: number, total: number}) {
+export default function ExperienceEntry({ exp, index, progress, dotRatio } : {exp: Experience, index: number, progress: MotionValue<number>, dotRatio: number}) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
   const controls = useAnimation();
+
+  // Dot lights up once the line's progress reaches it; progress never retracts, so it stays lit
+  const dotColor = useTransform(progress, (value) => (value > 0 && value >= dotRatio ? '#000000' : '#d1d5db'));
 
   useEffect(() => {
     if (inView) {
@@ -25,10 +28,10 @@ export default function ExperienceEntry({ exp, index, scrollPercent, total } : {
       className="relative ml-6"
     >
       {/* Dot */}
-      <div
-        className={`absolute -left-7.5 top-7 w-4 h-4 rounded-full transition-colors duration-500 border-2 ${
-          scrollPercent > index / total ? 'bg-black' : 'bg-gray-300'
-        }`}
+      <motion.div
+        data-exp-dot
+        className="absolute -left-7.5 top-7 w-4 h-4 rounded-full transition-colors duration-500 border-2"
+        style={{ backgroundColor: dotColor }}
       />
       {/* Card */}
       <div className="p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">

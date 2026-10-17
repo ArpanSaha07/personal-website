@@ -1,22 +1,36 @@
-# This is Arpan Saha's personal website.
+# Arpan Saha's Personal Website
 
-## TODO:
-- Fix layer shift of TechStack section
-- Add hover scroll animation on Navbar text of desktop version
-- Fix ProjectCard shadow effect
-- Resolve browser errors
-- Add favicon logos that can be seen across multiple platforms
+Personal portfolio site at [arpan-saha.com](https://arpan-saha.com), showcasing projects, experience and contact details.
+
+## Tech stack
+
+- [Next.js](https://nextjs.org/) 16 (App Router), React 19, TypeScript
+- Tailwind CSS v4
+- Framer Motion, react-scroll-parallax, react-simple-typewriter
+- Deployed on Vercel (Analytics and Speed Insights)
+
+## Getting started
+
+```bash
+npm install
+npm run dev     # start the dev server at http://localhost:3000
+npm run build   # production build
+npm start       # serve the production build
+npm run lint    # run ESLint
+```
+
+## Project structure
+
+- `app/page.tsx` composes the sections: Hero, About Me, Projects, Experience, Contact.
+- `app/components/` holds the section and shared components.
+- `app/data/` holds the content as JSON (`projects.json`, `experiences.json`, `techstack.json`); edit these to update the site content.
+- `app/types/` holds the TypeScript types for the data and component props.
+- `public/` holds images, project videos and the resume PDF.
+
+## Performance
+
 - Improve the website by taking suggestions from https://pagespeed.web.dev/ and https://www.webpagetest.org/
 
-## Issues to fix:
-- Remove the hero image from the background of the webpage
-- Hero image changes size when scrolling down on mobile devices- could be because of h-screen
-- Vertical line in the experience section
-- Project cards overflow into each other during scroll animation
-- Improve the Project hover cursor
+## Roadmap and known issues
 
-## Optional:
-- Refactor button component so that it can be used in all button instances in the project
-- Add change in shadow effect of ProjectCards on hover
-- Make all project cards the same size
-- Make the videos into gifs to reduce file size
+Open tasks, known bugs and planned features are tracked in `.claude/docs/todo.md` and `.claude/docs/bugs.md`.
