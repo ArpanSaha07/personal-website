@@ -11,7 +11,7 @@ export default function HeroSection() {
     <section id="hero-section" className="relative w-full h-screen overflow-hidden">
       <div className="fixed top-0 right-0 h-full w-[80%] z-[-10]">
         <Image
-            src="/images/my-hero-image.jpeg"
+            src="/images/my-hero-image.jpg"
             alt=""
             fill
             priority={true}
@@ -20,7 +20,8 @@ export default function HeroSection() {
       </div>
       
       {/* Gradient Overlay (only left 33% of section) */}
-      <div className="absolute top-0 left-0 h-full w-3/4 z-10 bg-gradient-to-r from-black via-black/90 to-transparent pointer-events-none" />
+      {/* <div className="absolute top-0 left-0 h-full w-3/4 z-10 bg-gradient-to-r from-black via-black/80 to-transparent pointer-events-none" /> */}
+      <div className="absolute top-0 left-0 h-full w-3/4 z-10 bg-gradient-to-r from-black from-[26.7%] via-black/70 to-transparent pointer-events-none" />
       
 
       {/* Content */}
