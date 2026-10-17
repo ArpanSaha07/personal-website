@@ -1,20 +1,22 @@
  [
     { 
-        "title": "Web Developer and SEO Specialist",
+        "title": "Full-stack Developer and SEO Specialist",
         "company": "ATS Containers",
         "date": "May 2026 - Present",
         "description": [
-            "• Developed and optimized responsive, high-performance web experiences across desktop, tablet, and mobile devices, reducing page load times by 40% and improving Core Web Vitals scores by 35%. .",
-            "• Led technical SEO and AI search optimization initiatives, increasing organic traffic by 30% and generating 15% more qualified leads through improved visibility in search engines and AI-generated search results."
+            "• Led end-to-end development of customer-facing product discovery and conversion flows, using user and market analytics to guide design and PHP/JavaScript improvements that increased sales inquiries by 35%, conversions by 15%, and Core Web Vitals by 30%.",
+            "• Designed and deployed a serverless Python agentic workflow on AWS Lambda and EventBridge that analyzes Search Console and website data and generates recurring research insights for marketing and product decisions, with automated Pytest validation.",
+            "• Built an MCP server connecting product data and availability to LLM clients, enabling conversational product discovery and quote requests."
         ]
     },
     { 
-        "title": "Production Tech Support",
+        "title": "Production Software Developer",
         "company": "Alorica",
         "date": "Oct 2025 - May 2026",
         "description": [
-            "• Developed, enhanced, and maintained Java-based enterprise applications, implementing new features, troubleshooting issues, and optimizing application performance using Java, SQL, and Linux while supporting business-critical systems with 99%+ uptime. ",
-            "• Managed application deployments and production releases, leveraging Bash and Python scripting to automate operational tasks and ensure reliable server updates, reducing recurring issues by 30%."
+            "• Developed and maintained production Java Spring Boot REST APIs and PostgreSQL services, delivering application features, database migrations, and SQL query improvements that increased API reliability and performance.",
+            "• Debugged production incidents and built GitHub Actions CI/CD workflows automating Maven builds, JUnit tests, and deployments, improving release reliability and reducing manual deployment effort.",
+            "• Worked closely with client and support teams to understand operational issues and feature needs, then translated those requirements into backend changes, SQL scripts, and production fixes for customer care application"
         ]
     },
     {
@@ -22,20 +24,9 @@
         "company": "McGill University",
         "date": "May 2022 - May 2025",
         "description": [
-            "• Revamped 2,000+ webpages in Drupal CMS, applying WCAG guidelines and responsive design best practices, significantly improving accessibility and user experience.",
-            "• Led end-to-end website redesign, increasing user engagement by 350% (15K → 65K monthly users) through improved UI/UX, information architecture, navigation, and SEO optimization.",
-            "• Built and maintained real-time analytics dashboards in Google Analytics to track SEO performance and optimize Google PageSpeed scores.",
-            "• Developed a Selenium-based automation tool to detect accessibility issues and provide actionable recommendations directly on webpages.",
-            "• Designed UI and visual assets using Canva and collaborated with cross-functional teams, presenting solutions and delivering scalable web experiences that strengthened branding and improved content clarity."
-        ]
-    },
-    {
-        "title": "ML Research Assistant",
-        "company": "McGill University",
-        "date": "Dec 2022 - April 2023",
-        "description": [
-            "• Developed convolutional neural network model to segment medical images in soft-tissue sarcoma research.", 
-            "• Collaborated with Dr. James Tsui to develop and evaluate ML models, presenting data-driven insights to optimize radiotherapy planning for cancer treatment."
+            "• Collaborated with stakeholders across multiple university departments to understand their needs and translate them into web solutions, leading the end-to-end redesign of user journeys, information architecture, and navigation that increased engagement by 350% (15K → 65K monthly users).",
+            "• Translated Figma UI/UX designs and user journeys into responsive, accessible web interfaces across 2,000+ webpages, applying WCAG standards and modern frontend practices to improve usability and cross-device experiences",
+            "• Built Python/Selenium tooling to automatically detect accessibility issues across webpages, helping maintain WCAG compliance across a 2,000+ page web environment."
         ]
     }
 ]

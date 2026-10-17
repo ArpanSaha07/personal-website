@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+import { getImageProps } from 'next/image';
 import Link from 'next/link';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub } from "react-icons/fa";
@@ -7,21 +7,34 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
 export default function HeroSection() {
+  // Art direction: the browser downloads only the source matching the viewport.
+  // fetchPriority instead of priority, since priority would preload both images.
+  const common = {
+    alt: '',
+    fill: true,
+    fetchPriority: 'high' as const,
+    loading: 'eager' as const,
+    className: 'object-cover object-top',
+  };
+  const {
+    props: { srcSet: desktopSrcSet, sizes: desktopSizes },
+  } = getImageProps({ ...common, src: '/images/my-hero-image.jpg', sizes: '80vw' });
+  const {
+    props: mobileProps,
+  } = getImageProps({ ...common, src: '/images/hero-image-mobile.jpg', sizes: '100vw' });
+
   return (
-    <section id="hero-section" className="relative w-full h-screen overflow-hidden">
-      <div className="fixed top-0 right-0 h-full w-[80%] z-[-10]">
-        <Image
-            src="/images/my-hero-image.jpg"
-            alt=""
-            fill
-            priority={true}
-            className="object-cover object-[top_center]"
-        />
+    <section id="hero-section" className="relative w-full h-svh overflow-hidden">
+      <div className="fixed top-0 right-0 h-svh w-full md:w-[80%] z-[-10]">
+        <picture>
+          <source media="(min-width: 768px)" srcSet={desktopSrcSet} sizes={desktopSizes} />
+          {/* eslint-disable-next-line jsx-a11y/alt-text -- alt is passed via mobileProps */}
+          <img {...mobileProps} />
+        </picture>
       </div>
       
       {/* Gradient Overlay (only left 33% of section) */}
-      {/* <div className="absolute top-0 left-0 h-full w-3/4 z-10 bg-gradient-to-r from-black via-black/80 to-transparent pointer-events-none" /> */}
-      <div className="absolute top-0 left-0 h-full w-3/4 z-10 bg-gradient-to-r from-black from-[26.7%] via-black/70 to-transparent pointer-events-none" />
+      <div className="absolute top-0 left-0 h-full w-full md:w-3/4 z-10 bg-gradient-to-r from-black/80 via-black/40 to-transparent md:from-black md:from-[26.7%] md:via-black/70 md:to-transparent pointer-events-none" />
       
 
       {/* Content */}
