@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between w-full text-black">
           
           {/* Logo */}
-          <Link href="#hero-section">
+          <Link href="/#hero-section">
             <Image
               src="/images/arpan-logo-black.svg"
               alt="Arpan Saha Logo"
@@ -29,9 +29,10 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-6 text-base">
-            <li><Link href="#projects" className="hover:underline" aria-label='Projects Section'>Projects</Link></li>
-            <li><Link href="#experience" className="hover:underline" aria-label='Experience Section'>Experience</Link></li>
-            <li><Link href="#contact" className="hover:underline" aria-label='Contact Section'>Contact</Link></li>
+            <li><Link href="/#projects" className="hover:underline" aria-label='Projects Section'>Projects</Link></li>
+            <li><Link href="/#experience" className="hover:underline" aria-label='Experience Section'>Experience</Link></li>
+            <li><Link href="/#contact" className="hover:underline" aria-label='Contact Section'>Contact</Link></li>
+            <li><Link href="/blogs" className="hover:underline" aria-label='Blogs'>Blogs</Link></li>
           </ul>
 
           {/* Burger Menu Button (Mobile) */}
@@ -70,9 +71,10 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
             className="fixed top-[80px] left-1/2 transform -translate-x-1/2 w-[90%] max-w-3xl bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-md text-black py-5 px-4 flex flex-col gap-4 z-50 md:hidden text-center">
-            <HoverTextAnimation href="#projects" label="Projects" onClick={toggleMenu} />
-            <HoverTextAnimation href="#experience" label="Experience" onClick={toggleMenu} />
-            <HoverTextAnimation href="#contact" label="Contact" onClick={toggleMenu} />
+            <HoverTextAnimation href="/#projects" label="Projects" onClick={toggleMenu} />
+            <HoverTextAnimation href="/#experience" label="Experience" onClick={toggleMenu} />
+            <HoverTextAnimation href="/#contact" label="Contact" onClick={toggleMenu} />
+            <HoverTextAnimation href="/blogs" label="Blogs" onClick={toggleMenu} />
 
           </motion.div>
         )}

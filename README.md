@@ -1,11 +1,12 @@
 # Arpan Saha's Personal Website
 
-Personal portfolio site at [arpan-saha.com](https://arpan-saha.com), showcasing projects, experience and contact details.
+Personal portfolio site at [arpan-saha.com](https://arpan-saha.com), showcasing projects, experience and contact details, plus a blog at `/blogs`.
 
 ## Tech stack
 
 - [Next.js](https://nextjs.org/) 16 (App Router), React 19, TypeScript
 - Tailwind CSS v4
+- MDX blog posts via `@next/mdx`
 - Framer Motion, react-scroll-parallax, react-simple-typewriter
 - Deployed on Vercel (Analytics and Speed Insights)
 
@@ -26,6 +27,11 @@ npm run lint    # run ESLint
 - `app/data/` holds the content as JSON (`projects.json`, `experiences.json`, `techstack.json`); edit these to update the site content.
 - `app/types/` holds the TypeScript types for the data and component props.
 - `public/` holds images, project videos and the resume PDF.
+- `content/blogs/` holds the blog posts as MDX; topics are in `app/data/blogTopics.json`. The pages are `app/blogs/page.tsx` (landing) and `app/blogs/[slug]/page.tsx` (post).
+
+## Writing a blog post
+
+Add `content/blogs/<slug>.mdx` (the filename becomes `/blogs/<slug>`), starting with a `metadata` export (title, summary, date, author, topic, tags, coverImage), then write the post in Markdown. Put images in `public/images/blogs/`. Full guide: `.claude/docs/blog.md`.
 
 ## Performance
 

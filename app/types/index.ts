@@ -25,6 +25,27 @@ export type TechStack = {
   technologies: Array<string>
 }
 
+export type BlogTopic = {
+  slug: string
+  name: string
+  description: string
+}
+
+// Exported as `metadata` from each post in content/blogs/*.mdx
+export type BlogPostMeta = {
+  title: string
+  summary: string
+  date: string // YYYY-MM-DD
+  author: string
+  topic: string // slug from blogTopics.json
+  tags: Array<string>
+  coverImage: string
+}
+
+export type BlogPost = BlogPostMeta & {
+  slug: string
+}
+
 // Page Types
 export type RootLayoutProps = Readonly<{
   children: ReactNode;
@@ -33,6 +54,24 @@ export type RootLayoutProps = Readonly<{
 // Components Types
 export type ProjectCardProps = {
     project: Project
+}
+
+export type BlogCardProps = {
+    post: BlogPost
+}
+
+export type BlogLandingProps = {
+    topics: Array<BlogTopic>
+    posts: Array<BlogPost>
+}
+
+export type ShareButtonProps = {
+    title: string
+}
+
+export type SideImageProps = {
+    src: string
+    alt: string
 }
 
 export type PillProps = {

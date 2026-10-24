@@ -1,0 +1,32 @@
+export const metadata = {
+  title: "How I implemented a robust CI/CD pipeline",
+  summary: "PLACEHOLDER POST: replace or delete before publishing.",
+  date: "2026-10-05",
+  author: "Arpan Saha",
+  topic: "software-development",
+  tags: ["softwaredevelopment", "CICD"],
+  coverImage: "/images/blogs/placeholder.svg",
+};
+
+PLACEHOLDER POST: this text only exists to preview the blog design. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+## The setup
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. A list:
+
+- Lint and type-check on every push
+- Run the build with `npm run build`
+- Deploy previews for each pull request
+
+```yaml
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci && npm run lint && npm run build
+```
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Read more in the [Next.js docs](https://nextjs.org/docs).

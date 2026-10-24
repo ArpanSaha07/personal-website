@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="hatch" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#e5e7eb" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#f3f4f6"/>
+  <rect width="1600" height="900" fill="url(#hatch)"/>
+  <text x="800" y="465" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="48" fill="#6b7280">Placeholder image</text>
+</svg>

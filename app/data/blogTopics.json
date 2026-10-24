@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "software-development",
+    "name": "Software Development",
+    "description": "Things I've built, broken and learned along the way."
+  },
+  {
+    "slug": "travel",
+    "name": "Travel",
+    "description": "Trips, places and the stories that came with them."
+  },
+  {
+    "slug": "discipline",
+    "name": "Discipline",
+    "description": "Habits, routines and showing up every day."
+  },
+  {
+    "slug": "ai-automation",
+    "name": "AI Automation",
+    "description": "Using AI to automate the boring parts of work and life."
+  }
+]
