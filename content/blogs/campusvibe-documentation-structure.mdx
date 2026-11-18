@@ -1,0 +1,130 @@
+export const metadata = {
+  title: "How I Structure Documentation to Build Faster with Coding Agents",
+  summary: "How I structure CLAUDE.md, rules, ADRs and linked docs so coding agents get the right context at the right time while building CampusVibe.",
+  date: "2026-11-18",
+  author: "Arpan Saha",
+  topic: "software-development",
+  tags: ["agenticcoding", "claudecode", "documentation", "softwaredevelopment"],
+  coverImage: "/images/blogs/documentation-hub.png",
+};
+
+While building [CampusVibe](https://github.com/ArpanSaha07/campus-vibe), an event discovery platform for university students, I've been experimenting with how to make coding agents more effective at developing and maintaining a growing codebase.
+
+One of the biggest lessons I've learned is that **giving coding agents more context doesn't necessarily lead to better results. Giving them the right context at the right time does.**
+
+Here's how I've structured my documentation and a little bit about the software development workflow I follow.
+
+## **My CLAUDE.md**
+
+I treat `CLAUDE.md` as the first source of information for Claude Code.
+
+It includes a short background on the project, the tech stack, repository structure, important instructions, conventions, and a map linking to other documentation the agent should read depending on the task.
+
+One of the most important instructions I added was **"Never assume, always ask."** This makes sure I am still making the product and technical decisions instead of letting the agent silently make them for me.
+
+It is important to keep `CLAUDE.md` light since it is loaded into the agent's context during sessions. When I first started working on the project, the file was around 300 lines long. I've since reduced it to around 100 lines while actually improving its usefulness.
+
+What I avoid putting in this file:
+
+* Vague instructions such as "write clean, robust code" that don't give the agent anything specific to follow.  
+* Detailed documentation on individual features or subsystems. Those belong in separate files that the agent can read when needed.
+
+The goal is not to teach the agent everything about the project upfront, but to help it find the information it needs.
+
+## **Skills: More Isn't Always Better**
+
+Another lesson I learned was not to install an infinite number of skill files.
+
+Initially, I installed skills for several AWS services I was using. Instead of improving the quality of the output, I ended up introducing overlapping instructions and unnecessary context.
+
+Now I keep a dedicated [`aws-handling.md`](https://github.com/ArpanSaha07/campus-vibe/blob/main/.claude/rules/aws-handling.md) rules file for project-specific guardrails and use the AWS MCP tooling to access AWS capabilities and documentation when needed.
+
+I also realised that using publicly available skills out of the box wasn't particularly useful for my project. For example, I experimented with skills such as UI UX Pro Max, which promised unique frontend designs, but the results looked like generic AI-generated slop.
+
+Instead, I developed my own `design-guidelines.md` as the source of truth. I defined the design direction, colours, typography, spacing and component conventions based on my own ideas and inspiration from other websites.
+
+I still use skills, but now they serve specific purposes, such as managing database changes, preparing feature specifications and documenting completed implementations.
+
+## **Documentation That Supports My SDLC Workflow**
+
+I also created a documentation structure that supports my development workflow, from brainstorming a feature to implementing and documenting it.
+
+**1\. Brainstorming and product scope**
+
+I start by brainstorming and researching any new feature I want to implement, including existing solutions and possible approaches.
+
+I maintain a `product.md` file that outlines the product scope, separating what has already been built, what is planned, and what is still just an idea.
+
+**2\. Feature specifications**
+
+Before implementing a feature, I use my `/start` skill to create a specification.
+
+It outlines the feature's goal, decisions taken, open questions, what is out of scope, expected files to change, and how the implementation will be verified.
+
+Including the files expected to change helps me understand the potential blast radius of the feature and avoid unnecessary changes elsewhere in the codebase.
+
+I review and approve the specification before writing code.
+
+**3\. Architecture Decision Records (ADRs)**
+
+For significant technical decisions involving multiple approaches, I write an [Architecture Decision Record](https://github.com/ArpanSaha07/campus-vibe/tree/main/.claude/docs/decisions).
+
+An ADR documents the options considered, the decision and its reasoning, the consequences, and when the decision might need to be revisited.
+
+Once I accept an ADR, it becomes a historical record. If I change my mind later, I write a new ADR that supersedes the previous one instead of rewriting history.
+
+This is particularly useful when a new agent session needs to understand why a particular technical approach was chosen.
+
+**4\. Implementation and testing**
+
+Once the feature scope and technical decisions are settled, I move on to writing tests and implementing the feature.
+
+I use local verification scripts, Git hooks and GitHub Actions to check changes before they are merged.
+
+At the end of each unit of work, I use a `/wrap-up` skill to update the project status, completed tasks, bug records and relevant documentation.
+
+The idea is to make sure that each feature leaves behind not just working code, but also the context needed to maintain it.
+
+## **Architecture Docs and Rules**
+
+I keep architecture documentation separate from rules.
+
+The `architecture/` folder contains living documents explaining how different parts of the platform work and why they were implemented that way.
+
+The `rules/` folder contains shorter, actionable instructions tied to specific areas of the codebase, such as frontend development, backend Java, database migrations and AWS operations.
+
+For example, a rule might capture an important constraint discovered while fixing a bug, with a link to the original bug report or ADR.
+
+This distinction matters: **architecture docs explain the reasoning, while rules tell the agent what it must not get wrong.**
+
+## **Linking Documentation and Keeping It Up to Date**
+
+I think efficient linking and documentation indexes are some of the most underrated techniques for managing context in agentic coding.
+
+Each documentation area has an index pointing to relevant files. The main `CLAUDE.md` also acts as a map, telling the agent where to look depending on what it is working on.
+
+I also maintain a `docs-map.json` file that maps parts of the codebase to their corresponding documentation.
+
+A documentation checker uses this map to identify potentially outdated documents when related code changes. Git hooks also remind me to update documentation instead of letting it go stale.
+
+This allows the agent to retrieve information selectively rather than loading the entire documentation into its context.
+
+Another important part is preserving the history of decisions and bugs. Every new agent session starts without the full context of previous sessions. Looking at the code alone doesn't always explain why a decision was taken, what was tried before, or what problems an earlier implementation caused.
+
+That's why I keep historical decisions in ADRs, completed work in task records, and bug fixes with their reasoning.
+
+## **What I've Learned**
+
+A few principles have guided how I structure documentation:
+
+* **Keep the entry point small.** Use `CLAUDE.md` to guide the agent to information, not to store everything.  
+* **Preserve the reasoning, not just the implementation.** Code explains what exists, but not always why.  
+* **Make context available when needed.** Use links, indexes, rules and focused skills instead of loading everything upfront.  
+* **Keep documentation aligned with the code.** Make updating relevant docs part of the development workflow.
+
+Maintaining comprehensive documentation and making sure it doesn't go stale is nothing new in software engineering.
+
+However, in the age of agentic coding, I believe a well-structured documentation system gives developers a significant advantage.
+
+It allows coding agents to understand a growing codebase faster, build on previous decisions instead of repeatedly questioning them, and helps us **ship robust code faster without sacrificing maintainability.**
+

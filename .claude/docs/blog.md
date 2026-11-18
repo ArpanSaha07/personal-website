@@ -56,5 +56,5 @@ White background, black 1px borders and divider lines, `rounded-xl` cards, Lato 
 
 ## Open items
 
-- The 4 posts in `content/blogs/` and `public/images/blogs/placeholder.svg` are placeholders. Replace or delete them before deploying.
+- The 4 placeholder posts now sit in `content/future_blogs/`, which the site does not load (`app/lib/blog.ts` only reads `content/blogs/`). They still use `public/images/blogs/placeholder.svg` as their cover. Replace or delete them before moving any into `content/blogs/`.
 - Not built yet: RSS feed, sitemap, `BlogPosting` JSON-LD, reading time.

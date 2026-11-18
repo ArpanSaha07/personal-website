@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import BlogCard from "@/app/components/BlogCard";
+import LikeButton from "@/app/components/LikeButton";
 import ReadingProgress from "@/app/components/ReadingProgress";
 import ShareButton from "@/app/components/ShareButton";
 import { getAllPosts, getPost, getSlugs } from "@/app/lib/blog";
@@ -48,12 +49,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <Image src={post.coverImage} alt={post.title} fill priority className="object-cover" />
         </div>
 
-        {/* Title, author, date, share */}
+        {/* Title, author, date, like, share */}
         <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mt-10">{post.title}</h1>
         <p className="text-lg text-gray-700 mt-4">By {post.author}</p>
         <div className="flex items-center justify-between border-b border-black pb-6 mt-1">
           <p className="text-base text-gray-600">{formatDate(post.date)}</p>
-          <ShareButton title={post.title} />
+          <div className="flex items-center gap-5">
+            <LikeButton />
+            <ShareButton title={post.title} />
+          </div>
         </div>
 
         {/* Post body */}
